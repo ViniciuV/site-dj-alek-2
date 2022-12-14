@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.action
+{
+  
+    padding-left: 10%;
+}
+.action .profile 
+{
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.action .profile img
+{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.action .menu
+{
+    position: absolute;
+    top: 80px;
+    right: -10px;
+    padding: 10px 20px;
+    margin: 10px 1100px;
+    background: #fff;
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.action .menu.active 
+{
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .menu h2
+{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2em;
+    background-color: #7c26f8;
+    border-radius: 30px;
+}
+.action .menu h2 span
+{
+    font-size: 14;
+    color: #7c26f8;
+    font-weight: 400;
+    
+}
+.action .menu ul li 
+{
+   list-style: none; 
+   padding: 10px 0;
+   color: black;
+   border-top: 1px solid #7e26f8;
+   display: flex;
+   align-items: center;
+}
+.action .menu ul li img
+{
+     max-width: 20px;
+     margin-right: 10px; 
+     opacity: 0.5;
+     transition: 0.5s;
+}
+.action .menu ul li:hover img
+{
+    opacity: 1;
+}
+.action .menu ul li a 
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.action .menu ul li:hover a
+{
+    color: #7c26f8;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+html, body, #home
+{
+    height: 100%;
+    overflow-x: hidden;
+}
+#caiu
+{
+  border-radius: 10px;
+}
+
+#titulo
+{
+  color: #7c26f8;
+  text-align: center;
+}
+
+#titulo:hover
+{
+  color: #fff;
+  transition-delay: 0.3s;
+}
+
+body
+{
+    background: url(imagens/Design\ sem\ nome.png),
+                url(imagens/ruido.png),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.navbar-transparente
+{
+    padding: 15px 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: white;
+     
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggle 
+{
+    color: rgba(0, 0, 0,.5);
+    border-color: rgba(255, 255, 255, 0.541);
+}
+
+.divisor
+{
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 12px 15px;
+}
+
+.capa
+{
+   text-align: center; 
+}
+
+#disc 
+{
+  
+  margin: auto;
+  text-align: center; 
+}
+
+.btn-custom
+{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo
+{
+    background: #7c26f8;
+}
+
+.btn-roxo:hover
+{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco
+{
+    border: 2px solid white;
+}
+
+.btn-branco:hover
+{
+    background: white;
+    color: black;
+}
+
+#servicos
+{
+    background: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#servicos h2, h3 
+{
+    color: #7c25f8;
+}
+
+#recursos
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#recursos
+{
+    color: white;
+
+}
+#recursos h3 
+{
+    color: #9bf0e1;
+}
+
+#recursos h2 
+{
+    color: #ffffff;
+}
+
+.albuns
+{
+    padding: 10px 0;
+}
+
+.rotacionar
+{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+footer
+{
+    background: rgba(0, 0, 0, 0.377);
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4
+{
+   color: #919496;
+   font-size: 0.8em;
+   text-transform: uppercase;
+}
+
+footer .navbar-nav a
+{
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover
+{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul 
+{
+    list-style: none;
+}
+
+footer ul li
+{
+    float: right;
+    margin: 0 5px;
+}
+
+h1
+{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2
+{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3
+{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.carousel-control-prev, .carousel-control-next 
+{
+    width: 5%;
+}
+
+.rodape { 
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem {
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) transpatent,transpatent);
+    transform-origin: top;
+    transform: skew(45deg);
+    pointer-events: none;
+}
+
+
+
+
+.searchBox {
+    
+    position: relative;
+    width: 65px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.searchBox:hover {
+    width: 200px;
+}
+
+
+.searchBox input {
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    padding: 10px 25px;
+    outline: none;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(#ffffff, #ffffff);
+    border: 3px solid #fff;
+}
+
+.searchBox input::placeholder, .searchBox input {
+    color: transparent;
+}
+
+.searchBox:hover input::placeholder,
+.searchBox:hover input {
+    color: #555;
+}
+
+#pesquisar {
+    position: absolute;
+    right: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    cursor: pointer;
+    
+}
+
+#oii {
+  padding: 100px;
+}
+
+
+.list
+{
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    gap: 6px;
+    padding-left: 40%;
+    
+}
+
+.list .user
+{
+    position: relative;
+    background: rgb(0, 0, 0);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    border: 3px solid #fff;
+}
+
+.list .user .imgBx
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.list .user .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list .user .details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list .user .details h3 
+{
+    font-weight: 600;
+    line-height: 1.1em;
+    color: #fff;
+}
+
+.list .user .details p
+{
+    font-weight: 500;
+    line-height: 0.8em;
+    color: #fff;
+} 
+
+.navigation
+{
+    position: relative;
+    width: 40px;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.navigation.active
+{
+    width: 200px;
+    
+}
+
+.navigation a
+{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #222327;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+}
+
+.navigation a:nth-child(1)
+{
+    transform: translateY(-12px);
+}
+
+.navigation a:nth-child(3)
+{
+    transform: translateY(12px);
+}
+
+
+.navigation.active a
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navigation.active a:nth-child(1)
+.navigation.active a:nth-child(3)
+{
+    transform: translateY(0);
+}
+
+.navigation.active a:nth-child(1)
+{
+    transform: translateY(0) translateX(-60px);
+}
+
+.navigation.active a:nth-child(3)
+{
+    transform: translateY(0) translateX(60px);
+}
+
+.navigation a i 
+{
+ transition: 0.5s;
+ font-size: 0em;
+}
+
+.navigation.active a i
+{
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.navigation.active a:hover 
+{
+   background: #9071da; 
+}
+
+.navigation.active a:hover i
+{
+    color:#fff;
+}
+
+
+
+.list .user:hover 
+{
+   background: #9071da; 
+   transition: 0.5s
+}
+
+#nome
+{
+    font-size: 1.3em;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .btn-custom {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+    .action .menu
+    {
+      margin: 10px 50px;
+    }
+    
+     .navbar-item, .navbar-brand
+    {
+      margin-left: 10px;
+    }
+
+
+    #manne
+    {
+        width: 50%;
+    }
+
+    #disc
+    {
+      width: 380px; 
+      height: 350px;
+      padding-left: 20%;
+    }
+
+  #tudo
+  {
+    font-size: 0.6em;
+    
+  }
+
+  #oie
+  {
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .list
+    {
+      padding-left: 1%;
+    }
+
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h1 {
+        font-size: 3em;
+    }
+    .action .menu
+    {
+      margin: 10px 100px;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    #disc
+    {
+      width: 500px; 
+      height: 350px;
+    }
+
+    #manne
+    {
+        width: 90%;
+    }
+    
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h1 {
+        font-size: 4em;
+    }
+    .action .menu
+    {
+      margin: 10px 400px;
+    }
+    .action .profile  {
+      margin: 0px 30px;
+    }
+    #disc
+    {
+      width: 380px; 
+      height: 350px;
+    }
+
+    #tudo
+  {
+    font-size: 1em;
+    margin-left: 10px
+  }
+
+  #oie
+  {
+    
+    width: 200%;
+  }
+    
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1699.98px) { 
+    h1 {
+        font-size: 5em;
+    }
+    .action .menu
+    {
+      margin: 10px 700px;
+    }
+    #oie
+  {
+    
+    width: 200%;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    h1 {
+        font-size: 6em;
+    }
+ }
+  
+ #manne
+ {
+     border-radius: 15px;
+ }
+ 
